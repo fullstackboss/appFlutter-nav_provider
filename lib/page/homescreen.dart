@@ -1,3 +1,4 @@
+import 'package:app_provider_nav/components/appbar.dart';
 import 'package:app_provider_nav/page/detalle.dart';
 import 'package:app_provider_nav/page/listado.dart';
 import 'package:app_provider_nav/page/setting.dart';
@@ -25,9 +26,7 @@ class _HomeAppState extends State<HomeApp> {
   Widget build(BuildContext context) {
     return Center(
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter Demo'),
-        ),
+        appBar: const AppBarra(),
         body: _listaPaginas[_selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
           onTap: (int element) {
